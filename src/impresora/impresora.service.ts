@@ -5,7 +5,6 @@ const exec = require('child_process').exec;
 const os = require('os');
 escpos.USB = require('escpos-usb');
 escpos.Serial = require('escpos-serialport');
-escpos.Screen = require('escpos-screen');
 
 @Injectable()
 export class ImpresoraService {
