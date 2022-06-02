@@ -54,7 +54,7 @@ export class ImpresoraService {
     public async imprimirAlbaran(texto: string, infoImpresora: InfoImpresora) {
         let device = null;
         if (infoImpresora.pid && infoImpresora.vid) {
-            device = await this.getDispositivo(infoImpresora.tipoImpresora, );
+            device = await this.getDispositivo(infoImpresora.tipoImpresora, infoImpresora.pid, infoImpresora.vid);
         } else {
             device = await this.getDispositivo(infoImpresora.tipoImpresora);
         }
